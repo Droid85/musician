@@ -1,0 +1,22 @@
+{
+  "name": "musician",
+  "version": "1.0.0",
+  "description": "website about music",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Droid85/musician.git"
+  },
+  "author": "Andrii Ostapenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Droid85/musician/issues"
+  },
+  "homepage": "https://github.com/Droid85/musician#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

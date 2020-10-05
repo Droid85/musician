@@ -1,0 +1,189 @@
+@media (min-width: 375px) {
+    .discography__album {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .discography {
+        @include bg_img(contain);
+        background-color: $bg-color;
+        background-position: bottom left;
+        background-image: url("../img/750/play_bg_full.jpg");
+        height: 100%;
+        background-position: bottom left;
+        font-family: "open Sans";
+        font-size: 15px;
+        color: #aaa;
+        margin-top: 150px;
+        padding-bottom: 450px;
+    }
+
+    .discography__description_header {
+        max-width: 500px;
+        position: relative;
+        border-bottom: 1px solid #000002;
+        margin: 0 auto;
+        height: 52px;
+    }
+
+    .discography__description_title {
+        font-family: "Dosis";
+        font-size: 50px;
+        line-height: 52px;
+        text-align: center;
+        margin: 0;
+        //text-decoration: line-through;
+        text-transform: uppercase;
+        color: #000002;
+        background: linear-gradient(to right, #8a6b52, #6e5658);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .discography__description_paragraph {
+        text-align: center;
+        max-width: 640px;
+        margin: 50px auto 0 auto;
+        line-height: 24px;
+    }
+
+    .discography__album_year {
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .discography__album_name {
+        border-top: 1px solid $main_text_color;
+        color: $main_text_color;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 9px;
+        margin: 10px 0 45px 0;
+        font-size: 15px;
+    }
+
+    .info_title {
+        font-size: 24px;
+        color: $main_text_color;
+        font-weight: normal;
+        margin: 0 0 28px 0;
+    }
+
+    .info_paragraph {
+        margin: 0;
+        line-height: 24px;
+    }
+
+    .discography__btn {
+        display: block;
+        margin: 45px auto 0 auto;
+        width: 196px;
+        height: 56px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        @include bg_img(cover);
+        color: $main_text_color;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    .discography__1st-album_btn {
+        background-image: url("../img/750/discography_play_bg_color.jpg");
+        color: $bg-color;
+    }
+
+    .discography__2nd-album {
+        margin-top: 100px;
+    }
+
+    .discography__2nd-album_btn {
+        background-image: url("../img/750/discography_play_bg_black.jpg");
+    }
+
+    .discography__3rd-album_btn {
+        width: 192px;
+        height: 53px;
+        background-image: url("../img/750/discography_play_bg_light.jpg");
+    }
+}
+
+@media (min-width: 768px) {
+
+    .discography__album {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .discography {
+        margin-top: 300px;
+        padding-bottom: 595px;
+        font-size: 21px;
+    }
+
+    .discography__description {
+        margin-bottom: 175px;
+    }
+
+    .discography__description_header {
+        height: 78px;
+        max-width: 740px;
+    }
+
+    .discography__description_title {
+        font-size: 75px;
+        line-height: 78px;
+        font-weight: normal;
+    }
+
+    .discography__description_paragraph {
+        font-size: 21px;
+        margin-top: 100px;
+        max-width: 1070px;
+        line-height: 35px;
+    }
+
+    .info_paragraph {
+        line-height: 35px;
+    }
+
+    .discography__album_name {
+        padding-top: 15px;
+        margin: 18px 0 65px 0;
+    }
+
+    .info_title {
+        font-size: 34px;
+        line-height: 36px;
+    }
+
+    .discography__btn {
+        margin: 45px auto 0 auto;
+        width: 294px;
+        height: 85px;
+    }
+
+    .discography__1st-album_btn {
+        background-image: url("../img/1537/discography_play_bg_color.jpg");
+    }
+
+    .discography__2nd-album_btn {
+        background-image: url("../img/1537/discography_play_bg_black.jpg");
+    }
+
+    .discography__3rd-album_btn {
+        width: 288px;
+        height: 80px;
+        background-image: url("../img/1537/discography_play_bg_light.jpg");
+    }
+}

@@ -1,0 +1,131 @@
+/*Mobile resolution*/
+
+@media (min-width: 320px) {
+    .header {
+        @include bg_img(cover);
+        background-image: url("../img/750/header_bg.jpg");
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+    .navigation {
+        @include flexible(column, flex-start, center);
+        padding: 50px 67px;
+    }
+
+    .navigation__button {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .navigation__button {
+        width: 82px;
+        height: 58px;
+        background-color: transparent;
+        border: none;
+        @include bg_img(cover);
+        background-image: url("../img/750/nav_bt.png");
+        cursor: pointer;
+    }
+
+    .navigation__list {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 8, 12,0.1);
+    }
+
+    .navigation__bitton-close {
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid #606060;
+        padding: 10px;
+        top: 20px;
+        right: 50px;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .navigation__item {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navigation__link {
+        display: inline-block;
+        color: #606060;
+        text-transform: uppercase;
+        font-family: 'Dosis';
+        padding: 13px 0;
+        &:hover {
+            color: $main_text_color;
+            padding-bottom: 11px;
+            border-bottom: 2px solid $main_text_color;
+        }
+    }
+}
+
+/*Tablet resolution*/
+
+@media (min-width: 768px) {
+    .header {
+        background-image: url("../img/1537/header_bg.jpg");
+    }
+
+    .navigation {
+        padding-top: 70px;
+        padding-right: 80px;
+    }
+
+    .navigation__button {
+        width: 95px;
+        height: 68px;
+        background-image: url("../img/1537/nav_bt.png");
+    }
+
+    .navigation__bitton-close {
+        padding: 15px;
+    }
+}
+
+/*Desktop resolution*/
+
+@media (min-width: 1024px) {
+    .header {
+        background-image: url("../img/2000/header_bg.jpg");
+        padding: 0;
+    }
+
+    .navigation {
+        padding: 0;
+        width: 100%;
+        height: 64px;
+    }
+
+    .navigation__button {
+        display: none;
+    }
+
+    .navigation__list {
+        @include flexible(row, center, center);
+        position: static;
+        }
+
+    .navigation__item {
+        margin-right: 45px;
+        &:last-child {
+            margin-right: 10px;
+            }
+        &:first-child {
+            margin-left: 10px;
+        }
+    }
+
+    /*.navigation__link {
+        white-space: nowrap;
+    }*/
+}
